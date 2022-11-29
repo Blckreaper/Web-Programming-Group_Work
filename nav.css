@@ -1,0 +1,64 @@
+nav.header-nav {
+    display: flex;
+    gap: 260px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+button#registration {
+    padding: 0px 18px;
+    width: auto;
+}
+
+
+button.control-button {
+    width: 100px;
+    height: 45px;
+    margin: 0;
+    border-radius: 5px;
+}
+
+
+button.controller {
+    background: #254551;
+    color: #1fea66;
+    width: 90px;
+    font-weight: 500;
+}
+
+div#controllers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.third-nav {
+    width: 33%;
+}
+
+.third-nav.right {
+    display: flex;
+    justify-content: end;
+}
+
+/* Side bar */
+
+button#showallplayers {
+    margin-top: 0;
+    padding: 0;
+    background: none;
+    color: #1fea66;
+    text-decoration: underline;
+    font-weight: 200;
+    width: auto;
+    height: auto;
+    font-size: 10px;
+}
+
+.showpercentageheader {
+    display: flex;
+    align-items: baseline;
+    gap: 85px;
+}

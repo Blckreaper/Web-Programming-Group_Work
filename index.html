@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>Play Jeopardy</title>
+</head>
+<body>
+
+    <header class="header">        
+        <nav class="header-nav">
+            <div class="third-nav">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="100px" height="10vh" viewBox="0 0 422.000000 119.000000" preserveAspectRatio="xMidYMid meet">
+
+                    <g transform="translate(0.000000,119.000000) scale(0.100000,-0.100000)" fill="#1fea66" stroke="none">
+                    <path d="M288 668 l-3 -523 -59 -3 c-41 -2 -62 1 -67 10 -5 7 -9 84 -9 171 l0 157 -75 0 -75 0 0 -209 c0 -207 0 -210 24 -238 l24 -28 148 -3 c185 -4 209 0 234 41 19 31 20 55 20 590 l0 557 -80 0 -80 0 -2 -522z"/>
+                    <path d="M595 1175 c-80 -28 -75 7 -75 -580 0 -511 0 -523 20 -548 30 -38 77 -47 248 -47 l152 0 0 70 0 70 -114 0 c-63 0 -121 3 -130 6 -13 5 -16 23 -16 93 0 54 5 92 12 99 8 8 52 12 130 12 l118 0 0 65 0 65 -118 0 c-78 0 -122 4 -130 12 -8 8 -12 46 -12 105 0 81 2 94 19 103 11 5 69 10 130 10 l111 0 0 240 0 240 -152 0 c-106 -1 -165 -5 -193 -15z"/>
+                    <path d="M1053 1166 l-28 -24 -3 -526 c-3 -577 -2 -585 55 -607 17 -6 88 -9 176 -7 l149 3 24 28 24 28 0 537 c-1 406 -4 541 -13 553 -26 33 -55 39 -206 39 -144 0 -151 -1 -178 -24z m218 -466 c18 -10 19 -24 19 -273 0 -191 -3 -266 -12 -275 -16 -16 -70 -16 -86 0 -9 9 -12 83 -12 269 0 255 0 258 22 273 26 19 42 20 69 6z"/>
+                    <path d="M1530 595 l0 -595 75 0 75 0 2 172 3 173 95 2 c116 4 134 7 160 35 19 21 20 34 20 374 0 345 0 352 -22 379 -37 47 -72 55 -248 55 l-160 0 0 -595z m268 93 c15 -15 16 -161 2 -189 -9 -15 -22 -19 -65 -19 l-55 0 0 110 0 110 53 0 c29 0 58 -5 65 -12z"/>
+                    <path d="M2133 1180 c-48 -19 -50 -31 -97 -575 -25 -286 -48 -539 -51 -562 l-6 -43 75 0 c42 0 76 1 77 3 1 1 8 78 17 172 l17 170 70 0 70 0 17 -170 c9 -94 16 -171 17 -172 1 -2 37 -3 81 -3 73 0 80 2 80 20 0 31 -109 1082 -115 1108 -10 41 -60 62 -150 61 -44 0 -90 -4 -102 -9z m136 -492 c5 -13 11 -63 15 -113 l7 -90 -56 0 -56 0 7 90 c9 114 16 135 49 135 17 0 28 -7 34 -22z"/>
+                    <path d="M2552 598 l3 -593 73 -3 72 -3 0 176 0 175 53 0 c40 0 59 -5 75 -20 12 -12 22 -24 23 -28 0 -4 6 -72 12 -152 l12 -145 78 -3 c91 -3 85 -21 61 185 -16 141 -25 176 -51 205 -14 15 -13 20 6 44 20 26 21 36 21 346 0 283 -2 323 -17 349 -29 49 -74 59 -258 59 l-165 0 2 -592z m272 90 c18 -26 22 -131 6 -172 -9 -24 -14 -26 -70 -26 l-60 0 0 110 0 110 54 0 c45 0 58 -4 70 -22z"/>
+                    <path d="M3090 595 l0 -595 153 0 c170 0 217 9 247 47 20 25 20 37 20 547 0 466 -2 524 -16 545 -30 42 -71 51 -244 51 l-160 0 0 -595z m274 99 c14 -13 16 -51 16 -265 0 -236 -1 -250 -20 -269 -15 -15 -33 -20 -75 -20 l-55 0 0 285 0 285 59 0 c41 0 65 -5 75 -16z"/>
+                    <path d="M3570 821 c0 -367 0 -368 23 -402 33 -50 60 -59 170 -59 l97 0 0 -104 c0 -120 3 -116 -96 -116 l-64 0 0 -70 0 -70 93 0 c106 0 159 12 187 42 19 21 20 36 20 585 l0 563 -70 0 -70 0 0 -350 0 -350 -58 0 c-32 0 -63 5 -70 12 -9 9 -12 100 -12 350 l0 338 -75 0 -75 0 0 -369z"/>
+                    <path d="M4080 775 l0 -415 70 0 70 0 0 415 0 415 -70 0 -70 0 0 -415z"/>
+                    <path d="M4080 245 l0 -65 70 0 70 0 0 65 0 65 -70 0 -70 0 0 -65z"/>
+                    </g>
+                </svg>
+            </div>
+
+            <div id="controllers" class="third-nav">
+                <button id="play" class="control-button controller play" onclick="PlayGame()">Play</button>
+                <button id="end" class="control-button controller end" onclick="EndGame()">End Game</button>
+                <button id="results" class="control-button controller end" onclick="findPercentageScore()">Results</button>
+            </div>
+            
+            <div class="third-nav right">
+                <button id="registration" class="control-button register">Register Player</button>
+            </div>
+            
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="side-bar">
+
+            <div id="showcharts">
+                <div style="width: 50%;">
+                    <h6 style="margin-top:0;">Gender Chart</h6>
+                    <p>Males</p>
+                    <img src="chart.jpg" alt="" height="15px" width="0">
+
+                    <p>Females</p>
+                    <img src="chart.jpg" alt="" height="15px" width="0">
+
+                </div>
+                
+
+                <div style="width: 50%;">
+                    <h6 style="margin-top:0;">Age Chart</h6>
+                    <p>Under 20</p>
+                    <img src="chart.jpg" alt="" height="15px" width="0">
+    
+                    <p>20 - 39</p>
+                    <img src="chart.jpg" alt="" height="15px" width="0">
+    
+                    <p>40 - 69</p>
+                    <img src="chart.jpg" alt="" height="15px" width="0">
+    
+                    <p>Over 69</p>
+                    <img src="chart.jpg" alt="" height="15px" width="0">
+                </div>
+                
+            </div>
+        </div>
+        
+
+        
+        <div class="game-map" id="game-map">
+            <table id="game-table" style="display: none;">
+                <thead>
+                    <tr>
+                        <th>Mathematics</th>
+                        <th>Science</th>
+                        <th>English Lang.</th>
+                        <th>Social Studies</th>
+                        <th>Bible Know.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><button id="category-btn-0" class="question-button" >$100</button></td>
+                        <td><button id="category-btn-1" class="question-button" >$100</button></td>
+                        <td><button id="category-btn-2" class="question-button" >$100</button></td>
+                        <td><button id="category-btn-3" class="question-button" >$100</button></td>
+                        <td><button id="category-btn-4" class="question-button" >$100</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="category-btn-5" class="question-button" >$200</button></td>
+                        <td><button id="category-btn-6" class="question-button" >$200</button></td>
+                        <td><button id="category-btn-7" class="question-button" >$200</button></td>
+                        <td><button id="category-btn-8" class="question-button" >$200</button></td>
+                        <td><button id="category-btn-9" class="question-button" >$200</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="category-btn-10" class="question-button" >$300</button></td>
+                        <td><button id="category-btn-11" class="question-button" >$300</button></td>
+                        <td><button id="category-btn-12" class="question-button" >$300</button></td>
+                        <td><button id="category-btn-13" class="question-button" >$300</button></td>
+                        <td><button id="category-btn-14" class="question-button" >$300</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="category-btn-15" class="question-button" >$400</button></td>
+                        <td><button id="category-btn-16" class="question-button" >$400</button></td>
+                        <td><button id="category-btn-17" class="question-button" >$400</button></td>
+                        <td><button id="category-btn-18" class="question-button" >$400</button></td>
+                        <td><button id="category-btn-19" class="question-button" >$400</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="category-btn-20" class="question-button" >$500</button></td>
+                        <td><button id="category-btn-21" class="question-button" >$500</button></td>
+                        <td><button id="category-btn-22" class="question-button" >$500</button></td>
+                        <td><button id="category-btn-23" class="question-button" >$500</button></td>
+                        <td><button id="category-btn-24" class="question-button" >$500</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="form-container">
+            <form action="" enctype="multipart/form-data" id="form" style="display: none;">
+                <div class="form-heading">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="100px" height="10vh" viewBox="0 0 422.000000 119.000000" preserveAspectRatio="xMidYMid meet">
+    
+                        <g transform="translate(0.000000,119.000000) scale(0.100000,-0.100000)" fill="#1fea66" stroke="none">
+                        <path d="M288 668 l-3 -523 -59 -3 c-41 -2 -62 1 -67 10 -5 7 -9 84 -9 171 l0 157 -75 0 -75 0 0 -209 c0 -207 0 -210 24 -238 l24 -28 148 -3 c185 -4 209 0 234 41 19 31 20 55 20 590 l0 557 -80 0 -80 0 -2 -522z"/>
+                        <path d="M595 1175 c-80 -28 -75 7 -75 -580 0 -511 0 -523 20 -548 30 -38 77 -47 248 -47 l152 0 0 70 0 70 -114 0 c-63 0 -121 3 -130 6 -13 5 -16 23 -16 93 0 54 5 92 12 99 8 8 52 12 130 12 l118 0 0 65 0 65 -118 0 c-78 0 -122 4 -130 12 -8 8 -12 46 -12 105 0 81 2 94 19 103 11 5 69 10 130 10 l111 0 0 240 0 240 -152 0 c-106 -1 -165 -5 -193 -15z"/>
+                        <path d="M1053 1166 l-28 -24 -3 -526 c-3 -577 -2 -585 55 -607 17 -6 88 -9 176 -7 l149 3 24 28 24 28 0 537 c-1 406 -4 541 -13 553 -26 33 -55 39 -206 39 -144 0 -151 -1 -178 -24z m218 -466 c18 -10 19 -24 19 -273 0 -191 -3 -266 -12 -275 -16 -16 -70 -16 -86 0 -9 9 -12 83 -12 269 0 255 0 258 22 273 26 19 42 20 69 6z"/>
+                        <path d="M1530 595 l0 -595 75 0 75 0 2 172 3 173 95 2 c116 4 134 7 160 35 19 21 20 34 20 374 0 345 0 352 -22 379 -37 47 -72 55 -248 55 l-160 0 0 -595z m268 93 c15 -15 16 -161 2 -189 -9 -15 -22 -19 -65 -19 l-55 0 0 110 0 110 53 0 c29 0 58 -5 65 -12z"/>
+                        <path d="M2133 1180 c-48 -19 -50 -31 -97 -575 -25 -286 -48 -539 -51 -562 l-6 -43 75 0 c42 0 76 1 77 3 1 1 8 78 17 172 l17 170 70 0 70 0 17 -170 c9 -94 16 -171 17 -172 1 -2 37 -3 81 -3 73 0 80 2 80 20 0 31 -109 1082 -115 1108 -10 41 -60 62 -150 61 -44 0 -90 -4 -102 -9z m136 -492 c5 -13 11 -63 15 -113 l7 -90 -56 0 -56 0 7 90 c9 114 16 135 49 135 17 0 28 -7 34 -22z"/>
+                        <path d="M2552 598 l3 -593 73 -3 72 -3 0 176 0 175 53 0 c40 0 59 -5 75 -20 12 -12 22 -24 23 -28 0 -4 6 -72 12 -152 l12 -145 78 -3 c91 -3 85 -21 61 185 -16 141 -25 176 -51 205 -14 15 -13 20 6 44 20 26 21 36 21 346 0 283 -2 323 -17 349 -29 49 -74 59 -258 59 l-165 0 2 -592z m272 90 c18 -26 22 -131 6 -172 -9 -24 -14 -26 -70 -26 l-60 0 0 110 0 110 54 0 c45 0 58 -4 70 -22z"/>
+                        <path d="M3090 595 l0 -595 153 0 c170 0 217 9 247 47 20 25 20 37 20 547 0 466 -2 524 -16 545 -30 42 -71 51 -244 51 l-160 0 0 -595z m274 99 c14 -13 16 -51 16 -265 0 -236 -1 -250 -20 -269 -15 -15 -33 -20 -75 -20 l-55 0 0 285 0 285 59 0 c41 0 65 -5 75 -16z"/>
+                        <path d="M3570 821 c0 -367 0 -368 23 -402 33 -50 60 -59 170 -59 l97 0 0 -104 c0 -120 3 -116 -96 -116 l-64 0 0 -70 0 -70 93 0 c106 0 159 12 187 42 19 21 20 36 20 585 l0 563 -70 0 -70 0 0 -350 0 -350 -58 0 c-32 0 -63 5 -70 12 -9 9 -12 100 -12 350 l0 338 -75 0 -75 0 0 -369z"/>
+                        <path d="M4080 775 l0 -415 70 0 70 0 0 415 0 415 -70 0 -70 0 0 -415z"/>
+                        <path d="M4080 245 l0 -65 70 0 70 0 0 65 0 65 -70 0 -70 0 0 -65z"/>
+                        </g>
+                    </svg>
+                    <h4>Registration!</h4>
+                </div>
+                
+                <div id="error"></div>
+                
+                <fieldset id="registration-info-1" class="registration-info">
+        
+                    <div class="group-fields">
+                        <div class="field-container">
+                            <label for="firstname">Firstname *</label>
+                            <input type="text" id="firstname" class="form-field" minlength="3" required>
+                        </div>
+                        
+                        <div class="field-container">
+                            <label for="lastname">Lastname *</label>
+                            <input type="text" id="lastname" class="form-field" required>
+                        </div>
+                    </div>
+                    
+                    <div class="field-container">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-field">
+                    </div>
+                    
+                    <div class="group-fields">
+                        <div class="field-container related">
+                            <label for="dob">Birthday *</label>
+                            <input type="date" id="dob" class="form-field" required>
+                        </div>          
+            
+                        <div class="field-container related">
+                            <label for="age">Age</label>
+                            <input type="number" id="age" class="form-field" min="12" readonly>
+                        </div>
+                    </div>
+                    
+                    
+                    
+        
+                    <div class="field-container">
+                        <label for="gender">Gender *</label required>
+                            <select name="gender" id="gender" class="form-field">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                    </div>
+        
+        
+                    <button id="next1">Continue</button>
+                    
+                </fieldset>
+                        
+                <fieldset id="registration-info-2" class="registration-info">    
+                    <div class="field-container">
+                        <label for="street">Street</label>
+                        <input type="text" id="street" class="form-field">
+                    </div>
+                    
+        
+        
+                    <div class="field-container">
+                        <label for="city">City</label>
+                        <input type="text" id="city" class="form-field">
+                    </div>
+                    
+        
+        
+                    <div class="field-container">
+                        <label for="town">Town *</label>
+                        <input type="text" id="town" class="form-field">
+                    </div>
+                    
+        
+        
+                    <div class="field-container">
+                        <label for="country">Country</label>
+                    <select name="country" id="country" class="form-field">
+                        <option value="AF">Afghanistan</option>
+                        <option value="AX">Åland Islands</option>
+                        <option value="AL">Albania</option>
+                        <option value="DZ">Algeria</option>
+                        <option value="AS">American Samoa</option>
+                        <option value="AD">Andorra</option>
+                        <option value="AO">Angola</option>
+                        <option value="AI">Anguilla</option>
+                        <option value="AQ">Antarctica</option>
+                        <option value="AG">Antigua and Barbuda</option>
+                        <option value="AR">Argentina</option>
+                        <option value="AM">Armenia</option>
+                        <option value="AW">Aruba</option>
+                        <option value="AU">Australia</option>
+                        <option value="AT">Austria</option>
+                        <option value="AZ">Azerbaijan</option>
+                        <option value="BS">Bahamas</option>
+                        <option value="BH">Bahrain</option>
+                        <option value="BD">Bangladesh</option>
+                        <option value="BB">Barbados</option>
+                        <option value="BY">Belarus</option>
+                        <option value="BE">Belgium</option>
+                        <option value="BZ">Belize</option>
+                        <option value="BJ">Benin</option>
+                        <option value="BM">Bermuda</option>
+                        <option value="BT">Bhutan</option>
+                        <option value="BO">Bolivia, Plurinational State of</option>
+                        <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                        <option value="BA">Bosnia and Herzegovina</option>
+                        <option value="BW">Botswana</option>
+                        <option value="BV">Bouvet Island</option>
+                        <option value="BR">Brazil</option>
+                        <option value="IO">British Indian Ocean Territory</option>
+                        <option value="BN">Brunei Darussalam</option>
+                        <option value="BG">Bulgaria</option>
+                        <option value="BF">Burkina Faso</option>
+                        <option value="BI">Burundi</option>
+                        <option value="KH">Cambodia</option>
+                        <option value="CM">Cameroon</option>
+                        <option value="CA">Canada</option>
+                        <option value="CV">Cape Verde</option>
+                        <option value="KY">Cayman Islands</option>
+                        <option value="CF">Central African Republic</option>
+                        <option value="TD">Chad</option>
+                        <option value="CL">Chile</option>
+                        <option value="CN">China</option>
+                        <option value="CX">Christmas Island</option>
+                        <option value="CC">Cocos (Keeling) Islands</option>
+                        <option value="CO">Colombia</option>
+                        <option value="KM">Comoros</option>
+                        <option value="CG">Congo</option>
+                        <option value="CD">Congo, the Democratic Republic of the</option>
+                        <option value="CK">Cook Islands</option>
+                        <option value="CR">Costa Rica</option>
+                        <option value="CI">Côte d'Ivoire</option>
+                        <option value="HR">Croatia</option>
+                        <option value="CU">Cuba</option>
+                        <option value="CW">Curaçao</option>
+                        <option value="CY">Cyprus</option>
+                        <option value="CZ">Czech Republic</option>
+                        <option value="DK">Denmark</option>
+                        <option value="DJ">Djibouti</option>
+                        <option value="DM">Dominica</option>
+                        <option value="DO">Dominican Republic</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="EG">Egypt</option>
+                        <option value="SV">El Salvador</option>
+                        <option value="GQ">Equatorial Guinea</option>
+                        <option value="ER">Eritrea</option>
+                        <option value="EE">Estonia</option>
+                        <option value="ET">Ethiopia</option>
+                        <option value="FK">Falkland Islands (Malvinas)</option>
+                        <option value="FO">Faroe Islands</option>
+                        <option value="FJ">Fiji</option>
+                        <option value="FI">Finland</option>
+                        <option value="FR">France</option>
+                        <option value="GF">French Guiana</option>
+                        <option value="PF">French Polynesia</option>
+                        <option value="TF">French Southern Territories</option>
+                        <option value="GA">Gabon</option>
+                        <option value="GM">Gambia</option>
+                        <option value="GE">Georgia</option>
+                        <option value="DE">Germany</option>
+                        <option value="GH">Ghana</option>
+                        <option value="GI">Gibraltar</option>
+                        <option value="GR">Greece</option>
+                        <option value="GL">Greenland</option>
+                        <option value="GD">Grenada</option>
+                        <option value="GP">Guadeloupe</option>
+                        <option value="GU">Guam</option>
+                        <option value="GT">Guatemala</option>
+                        <option value="GG">Guernsey</option>
+                        <option value="GN">Guinea</option>
+                        <option value="GW">Guinea-Bissau</option>
+                        <option value="GY">Guyana</option>
+                        <option value="HT">Haiti</option>
+                        <option value="HM">Heard Island and McDonald Islands</option>
+                        <option value="VA">Holy See (Vatican City State)</option>
+                        <option value="HN">Honduras</option>
+                        <option value="HK">Hong Kong</option>
+                        <option value="HU">Hungary</option>
+                        <option value="IS">Iceland</option>
+                        <option value="IN">India</option>
+                        <option value="ID">Indonesia</option>
+                        <option value="IR">Iran, Islamic Republic of</option>
+                        <option value="IQ">Iraq</option>
+                        <option value="IE">Ireland</option>
+                        <option value="IM">Isle of Man</option>
+                        <option value="IL">Israel</option>
+                        <option value="IT">Italy</option>
+                        <option value="JM" selected="selected">Jamaica</option>
+                        <option value="JP">Japan</option>
+                        <option value="JE">Jersey</option>
+                        <option value="JO">Jordan</option>
+                        <option value="KZ">Kazakhstan</option>
+                        <option value="KE">Kenya</option>
+                        <option value="KI">Kiribati</option>
+                        <option value="KP">Korea, Democratic People's Republic of</option>
+                        <option value="KR">Korea, Republic of</option>
+                        <option value="KW">Kuwait</option>
+                        <option value="KG">Kyrgyzstan</option>
+                        <option value="LA">Lao People's Democratic Republic</option>
+                        <option value="LV">Latvia</option>
+                        <option value="LB">Lebanon</option>
+                        <option value="LS">Lesotho</option>
+                        <option value="LR">Liberia</option>
+                        <option value="LY">Libya</option>
+                        <option value="LI">Liechtenstein</option>
+                        <option value="LT">Lithuania</option>
+                        <option value="LU">Luxembourg</option>
+                        <option value="MO">Macao</option>
+                        <option value="MK">Macedonia, the former Yugoslav Republic of</option>
+                        <option value="MG">Madagascar</option>
+                        <option value="MW">Malawi</option>
+                        <option value="MY">Malaysia</option>
+                        <option value="MV">Maldives</option>
+                        <option value="ML">Mali</option>
+                        <option value="MT">Malta</option>
+                        <option value="MH">Marshall Islands</option>
+                        <option value="MQ">Martinique</option>
+                        <option value="MR">Mauritania</option>
+                        <option value="MU">Mauritius</option>
+                        <option value="YT">Mayotte</option>
+                        <option value="MX">Mexico</option>
+                        <option value="FM">Micronesia, Federated States of</option>
+                        <option value="MD">Moldova, Republic of</option>
+                        <option value="MC">Monaco</option>
+                        <option value="MN">Mongolia</option>
+                        <option value="ME">Montenegro</option>
+                        <option value="MS">Montserrat</option>
+                        <option value="MA">Morocco</option>
+                        <option value="MZ">Mozambique</option>
+                        <option value="MM">Myanmar</option>
+                        <option value="NA">Namibia</option>
+                        <option value="NR">Nauru</option>
+                        <option value="NP">Nepal</option>
+                        <option value="NL">Netherlands</option>
+                        <option value="NC">New Caledonia</option>
+                        <option value="NZ">New Zealand</option>
+                        <option value="NI">Nicaragua</option>
+                        <option value="NE">Niger</option>
+                        <option value="NG">Nigeria</option>
+                        <option value="NU">Niue</option>
+                        <option value="NF">Norfolk Island</option>
+                        <option value="MP">Northern Mariana Islands</option>
+                        <option value="NO">Norway</option>
+                        <option value="OM">Oman</option>
+                        <option value="PK">Pakistan</option>
+                        <option value="PW">Palau</option>
+                        <option value="PS">Palestinian Territory, Occupied</option>
+                        <option value="PA">Panama</option>
+                        <option value="PG">Papua New Guinea</option>
+                        <option value="PY">Paraguay</option>
+                        <option value="PE">Peru</option>
+                        <option value="PH">Philippines</option>
+                        <option value="PN">Pitcairn</option>
+                        <option value="PL">Poland</option>
+                        <option value="PT">Portugal</option>
+                        <option value="PR">Puerto Rico</option>
+                        <option value="QA">Qatar</option>
+                        <option value="RE">Réunion</option>
+                        <option value="RO">Romania</option>
+                        <option value="RU">Russian Federation</option>
+                        <option value="RW">Rwanda</option>
+                        <option value="BL">Saint Barthélemy</option>
+                        <option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+                        <option value="KN">Saint Kitts and Nevis</option>
+                        <option value="LC">Saint Lucia</option>
+                        <option value="MF">Saint Martin (French part)</option>
+                        <option value="PM">Saint Pierre and Miquelon</option>
+                        <option value="VC">Saint Vincent and the Grenadines</option>
+                        <option value="WS">Samoa</option>
+                        <option value="SM">San Marino</option>
+                        <option value="ST">Sao Tome and Principe</option>
+                        <option value="SA">Saudi Arabia</option>
+                        <option value="SN">Senegal</option>
+                        <option value="RS">Serbia</option>
+                        <option value="SC">Seychelles</option>
+                        <option value="SL">Sierra Leone</option>
+                        <option value="SG">Singapore</option>
+                        <option value="SX">Sint Maarten (Dutch part)</option>
+                        <option value="SK">Slovakia</option>
+                        <option value="SI">Slovenia</option>
+                        <option value="SB">Solomon Islands</option>
+                        <option value="SO">Somalia</option>
+                        <option value="ZA">South Africa</option>
+                        <option value="GS">South Georgia and the South Sandwich Islands</option>
+                        <option value="SS">South Sudan</option>
+                        <option value="ES">Spain</option>
+                        <option value="LK">Sri Lanka</option>
+                        <option value="SD">Sudan</option>
+                        <option value="SR">Suriname</option>
+                        <option value="SJ">Svalbard and Jan Mayen</option>
+                        <option value="SZ">Swaziland</option>
+                        <option value="SE">Sweden</option>
+                        <option value="CH">Switzerland</option>
+                        <option value="SY">Syrian Arab Republic</option>
+                        <option value="TW">Taiwan, Province of China</option>
+                        <option value="TJ">Tajikistan</option>
+                        <option value="TZ">Tanzania, United Republic of</option>
+                        <option value="TH">Thailand</option>
+                        <option value="TL">Timor-Leste</option>
+                        <option value="TG">Togo</option>
+                        <option value="TK">Tokelau</option>
+                        <option value="TO">Tonga</option>
+                        <option value="TT">Trinidad and Tobago</option>
+                        <option value="TN">Tunisia</option>
+                        <option value="TR">Turkey</option>
+                        <option value="TM">Turkmenistan</option>
+                        <option value="TC">Turks and Caicos Islands</option>
+                        <option value="TV">Tuvalu</option>
+                        <option value="UG">Uganda</option>
+                        <option value="UA">Ukraine</option>
+                        <option value="AE">United Arab Emirates</option>
+                        <option value="GB">United Kingdom</option>
+                        <option value="US">United States</option>
+                        <option value="UM">United States Minor Outlying Islands</option>
+                        <option value="UY">Uruguay</option>
+                        <option value="UZ">Uzbekistan</option>
+                        <option value="VU">Vanuatu</option>
+                        <option value="VE">Venezuela, Bolivarian Republic of</option>
+                        <option value="VN">Viet Nam</option>
+                        <option value="VG">Virgin Islands, British</option>
+                        <option value="VI">Virgin Islands, U.S.</option>
+                        <option value="WF">Wallis and Futuna</option>
+                        <option value="EH">Western Sahara</option>
+                        <option value="YE">Yemen</option>
+                        <option value="ZM">Zambia</option>
+                        <option value="ZW">Zimbabwe</option>
+                    </select> 
+                    </div>
+                       
+                    <div class="group-fields">
+                        <button id="previous">Previous</button>
+                        <button id="next2">Continue</button>
+                    </div>
+                    
+                    
+                    
+                    
+                </fieldset>
+                
+                <fieldset id="registration-info-3" class="registration-info">
+                                
+                    <div class="field-container">
+                        <label for="education">Educational Level *</label required>
+                            <select name="education" id="education" class="form-field"> 
+                                <option value="0" selected="selected">Early Childhood (level 0)</option>
+                                <option value="1">Primary (level 1)</option>
+                                <option value="2">Lower Secondary (level 2)</option>
+                                <option value="3">Upper Secondary (level 3)</option>
+                                <option value="4">Bachelor's (level 4)</option>
+                                <option value="5">Master's (level 5)</option>
+                                <option value="6">Doctorate (level 6)</option>
+                            </select>
+                    </div>
+        
+                    <div class="field-container">
+                        <label for="picture">Profile Picture</label required>
+                        <input type="file" name="picture" id="picture" accept="image/png, image/jpeg">
+                    </div>
+                    
+        
+                    <button type="submit" id="register">Register</button>
+                </fieldset>
+        
+            </form>
+
+
+            <div class="side-bar" id="showPlayer">
+                <div class="showpercentageheader">
+                    <h6>Results</h6>
+                    <button id="showallplayers" onclick="ShowAllPlayers()">Show Details</button>
+                </div>
+                <div id="showpercentage">  
+                    <!-- player container               -->
+                    <div class="players" id="players">
+
+                    </div>
+                </div>
+                
+                <div id="showallplayers">                    
+                    <div class="players" id="allplayers">
+
+                    </div>
+                </div>
+                
+    
+            </div>
+        </div>
+        
+    
+    </main>
+    
+    <div class="pop-up" id="popup" style="display: none;">
+        <div class="counter" id="counter">
+            60
+        </div>
+        <div id="category"></div>
+        <div class="question" id="question"></div>
+        <form action="" id="answerform">
+            <input type="text" placeholder="Enter your answer here..." id="answer">
+            <input type="submit" value="Answer" id="answerbtn">
+        </form>
+    </div>
+
+
+    <script src="site.js"></script>
+    <script src="show.js"></script>
+    <script src="showall.js"></script>
+    <script src="chart.js"></script>
+    <script src="register.js"></script>
+    <script src="play.js"></script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+.game-map {
+    width: 55%;
+    height: 88vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    border-spacing: .5rem;
+}
+
+
+
+th, td {
+    padding: 30px 20px;
+    font-weight: 300;
+    color: aliceblue;
+    background-color: #26444f;
+    border-radius: 5px;
+    text-align: center;
+}
+
+td {
+    font-weight: 600;
+}
+
+
+.players, .side-bar, #showcharts {
+    width: 17vw;
+    padding: 12px;
+    border-radius: 5px;
+    height: auto;
+    background: #1c323a;
+    vertical-align: top;
+    margin-bottom: auto;
+    margin-top: 5vh;
+}
+.players, #showcharts {
+    width: 15vw;
+}
+
+#showcharts {
+    display: flex;
+    gap: 15px;
+    margin: 25px 0px;    
+    flex-direction: column;
+}
+
+
+
+h6 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    gap: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    margin: 20px 0px;
+}
+
+
+p {
+    color: #a7d1e0;
+    margin: 0;
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.player {
+    background: #264b53;
+    padding: 15px;
+    border-radius: 8px 8px 8px 0px;
+    margin-bottom: 10px;
+}
+
+.player-score {
+    font-weight: 400;
+    color: white;
+    font-size: 14px;
+}
+
+.form-container {
+    width: 20vw;
+}
+
+.question-button {
+    margin: 0;
+    background: none;
+    color: aliceblue;
+    height: 0;
+}
+
+div#showpercentage {
+    margin-bottom: 20px;
+}
+
+div#players, #allplayers {
+    max-height: 218px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: auto;
+    margin-top: 0;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 2px;
+    border-radius: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #13242a;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #406d7e;
+  }
+  
+
+
+  /* Chart */
+
+.barchart{
+    transition: 1s;
+}
